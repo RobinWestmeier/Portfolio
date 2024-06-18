@@ -1,1 +1,66 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("./assets/font/Poppins-Black.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Poppins-bold", sans-serif;
+  src: url("./assets/font/Poppins-Bold.ttf");
+  font-style: bold;
+}
+
+@mixin borderStyling($bRadius) {
+  border-radius: $bRadius;
+  border: 2px solid white;
+}
+
+@mixin dFLex($jc: center, $ai: center, $g: 0px) {
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+}
+
+body {
+  margin: 0;
+  scroll-behavior: smooth;
+  background-color: #141D2F;
+  color: white;
+}
+
+.fontPoppins {
+  font-family: "Poppins";
+}
+
+.fontPoppinsBold {
+  font-family: "Poppins-bold";
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #9f0908;
+}
+
+h4 {
+  font-family: "Poppins";
+  font-size: 56px;
+  font-weight: bold;
+  text-align: center;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
