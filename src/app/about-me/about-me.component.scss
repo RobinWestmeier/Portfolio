@@ -1,0 +1,9 @@
+section {
+    display: flex;
+    z-index: 2;
+    height: 50vh;
+
+    p {
+        z-index: 4;
+    }
+}

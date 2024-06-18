@@ -43,11 +43,10 @@
       font-family: "Poppins", sans-serif;
     }
 
-
     div {
       display: flex;
       flex-direction: column;
-  
+
       .name {
         font-size: 88px;
         font-weight: 800;
@@ -55,7 +54,7 @@
         position: relative;
         top: 12px;
       }
-  
+
       .occupation {
         font-size: 52px;
         font-weight: 100;
@@ -81,6 +80,63 @@
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     //   z-index: 3;
     align-self: center;
+  }
+}
+
+.social-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  top: 90%;
+  z-index: 2;
+
+  .left-line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4px;
+    background-color: #4b47ff;
+    flex-grow: 1;
+    border-radius: 4px;
+    min-width: 100px;
+  }
+
+  .right-line {
+    flex-grow: 1;
+  }
+
+  .github-linkedin-email {
+    display: flex;
+    justify-content: space-between;
+    width: 1440px;
+    align-items: center;
+    padding-right: 20px;
+
+    p {
+      font-size: 23px;
+    }
+
+    .social-png {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      margin-right: 60px;
+      padding: 0 20px;
+
+      img {
+        width: 30px;
+        height: 30px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+      }
+
+      img:hover {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 
