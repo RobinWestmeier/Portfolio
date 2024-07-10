@@ -1,1 +1,53 @@
-<p>portfolio works!</p>
+<div class="headline-container" id="my-portfolio">
+    <div class="portfolio-headline hidden">
+        <div class="left-line-wrapper">
+            <div class="left-line"></div>
+            <div class="left-line-cover"></div>
+        </div>
+        <h1>
+            Portfolio
+        </h1>
+        <div class="right-line"></div>
+    </div>
+    <div class="portfolio-text hidden">
+        <p>
+            Explore a selection of my work here - Interact with the projects to see my skills in action.
+        </p>
+    </div>
+</div>
+
+<div class="portfolio-container">
+    <div *ngFor="let item of portfolioItems; let i = index" class="portfolio-wrapper"
+        [ngClass]="{'row-reverse': i % 2 !== 0}">
+        <div class="left-side hidden">
+            <img [src]="item.imageUrl" alt=" {{item.title}}">
+        </div>
+        <div class="right-side">
+            <h2>
+                {{item.title}}
+            </h2>
+            <span>
+                {{item.technologies}}
+            </span>
+            <p>
+                {{item.description}}
+            </p>
+            <div class="buttons-wrapper">
+                <button (click)="openLink(item.liveTestUrl)" class="live-test-button">
+                    Live Test
+                </button>
+                <button (click)="openLink(item.gitHubUrl)" class="github-button">
+                    Github
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="blue-shadow-big">
+        <img src="assets/img/background/Blue shadow2.png" alt="">
+    </div>
+
+    <div class="blue-shadow">
+        <img src="assets/img/background/Green shadow1.png" alt="">
+    </div>
+</div>

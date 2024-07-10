@@ -1,0 +1,357 @@
+@import "../../variables.scss";
+
+@keyframes hoverButton {
+  from {
+    transform: scale(1);
+    background-color: #00bee8;
+    transform-origin: top;
+  }
+  to {
+    transform: scale(1.25);
+    background-color: #4b47ff;
+    transform-origin: top;
+  }
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.my-skill-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #141d2f;
+  padding-top: 120px;
+  position: relative;
+  overflow: hidden;
+
+  .my-skill-section {
+    width: 1440px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+
+    .right-side {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      margin-bottom: 50px;
+
+      .my-skills-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 50px;
+
+        .my-skills {
+          font-size: 82px;
+          font-weight: 700;
+          display: flex;
+          justify-content: flex-end;
+
+          .right-line {
+            flex-grow: 1;
+            background-color: $secondary-color;
+            height: 4px;
+            border-radius: 4px;
+          }
+        }
+
+        .info-box-and-button-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .my-skills-info p {
+            display: flex;
+            justify-content: flex-end;
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .left-side {
+      width: 70%;
+
+      .img-container {
+        margin: 100px auto 50px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 25px;
+        width: 100%;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+
+        img:hover {
+          animation: bounce 0.3s 1;
+        }
+      }
+    }
+  }
+
+  .talk-button {
+    width: 165px;
+    height: 55px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00bee8;
+    color: #fff;
+    font-size: 24px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    align-self: center;
+  }
+
+  .talk-button:hover {
+    animation: hoverButton ease-in-out;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  .green-shadow {
+    position: absolute;
+    top: 180px;
+    left: -450px;
+    height: 100%;
+    z-index: 1;
+    transform: rotateX(180deg);
+
+    img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      position: absolute;
+    }
+  }
+}
+
+.my-skill-container
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .my-skills
+  .mySkillsDe 
+  h3{
+  font-size: 65px;
+}
+
+.my-skill-container
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .info-box-and-button-container
+  .lets-talk-button-de {
+  width: 217px;
+  font-size: 18px;
+}
+
+@media (max-width: 1450px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .my-skills
+    .mySkillsDe
+    h3 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .my-skills
+    .mySkillsDe {
+    font-size: 47px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .my-skills
+    .mySkillsDe {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 950px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .my-skills
+    .mySkillsDe {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 500px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .my-skills
+    .mySkillsDe {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 950px) {
+  .my-skill-container .my-skill-section .right-side .my-skills-container {
+    margin-right: 0;
+  }
+  .my-skill-container .my-skill-section {
+    display: flex;
+    flex-direction: column;
+
+    .left-side,
+    .right-side {
+      width: 100%;
+    }
+
+    .right-side {
+      order: 1;
+      display: block;
+
+      .my-skills-container .my-skills p {
+        font-size: 65px;
+      }
+    }
+
+    .left-side {
+      order: 2;
+      margin-top: -160px;
+      padding-bottom: 100px;
+
+      .img-container {
+        justify-items: center;
+      }
+    }
+  }
+
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .info-box-and-button-container
+    .lets-talk-button {
+    position: relative;
+    top: 570px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .info-box-and-button-container
+    .lets-talk-button:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .info-box-and-button-container {
+    display: block;
+  }
+}
+
+@media (max-width: 853px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .info-box-and-button-container
+    .lets-talk-button {
+    position: relative;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 590px) {
+  .my-skill-container .my-skill-section .left-side .img-container {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .info-box-and-button-container
+    .lets-talk-button {
+    position: relative;
+    top: 610px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 590px) {
+  .my-skill-container .my-skill-section .left-side .img-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .my-skill-container .green-shadow {
+    left: -750px;
+  }
+}
+
+@media (max-width: 464px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .info-box-and-button-container
+    .lets-talk-button {
+    position: relative;
+    top: 710px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  h3 {
+    font-size: 45px;
+  }
+
+  .green-shadow {
+    left: -800px;
+  }
+}
+
+@media (max-width: 400px) {
+  .my-skill-container
+    .my-skill-section
+    .right-side
+    .my-skills-container
+    .my-skills
+    p {
+    font-size: 45px;
+  }
+}

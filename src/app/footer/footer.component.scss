@@ -1,0 +1,124 @@
+@import "../../variables.scss";
+
+.footer-container {
+    width: 100%;
+    background-color: #141d2f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid $primary-color;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 300px;
+  
+    .footer-and-impressum {
+      width: 100%;
+      max-width: 1400px;
+  
+      .footer-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+        .name {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+
+        .name h3 {
+          font-size: 56px;
+        }
+  
+        .my-name {
+          font-size: 23px;
+        }
+  
+        .github-linkedin-email {
+          display: flex;
+  
+          .social-png {
+            display: flex;
+            gap: 40px;
+  
+            img {
+              width: 30px;
+              height: 30px;
+              object-fit: cover;
+              cursor: pointer;
+              transition: transform 0.5s ease;
+  
+              &:hover {
+                transform: rotate(360deg);
+              }
+            }
+          }
+        }
+      }
+  
+      .impressum {
+        display: flex;
+        justify-content: flex-start;
+        margin-top: -26px;
+        cursor: pointer;
+  
+        a {
+          text-decoration: none;
+          transition: color 0.3s ease;
+          font-size: 20px;
+        }
+  
+        a:hover {
+          // border-bottom: 2px solid $secondary-color;
+          text-decoration: underline 3px $secondary-color;
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 730px) {
+    .footer-container {
+      height: auto;
+  
+      .footer-and-impressum {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        .impressum p {
+          position: relative;
+          top: 20px;
+          margin-bottom: 50px;
+        }
+  
+        .footer-wrapper {
+          display: block;
+  
+          .my-name {
+            font-size: 17px;
+            padding: 20px;
+          }
+  
+          .github-linkedin-email {
+            justify-content: center;
+            padding: 10px 20px 20px 20px;
+          }
+          	
+          .name {
+            align-items: center;
+          }
+
+          .name h3 {
+            text-align: center;
+            top: 30px;
+            padding-bottom: 40px;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+  
+  .styled-letter {
+    color: $secondary-color;
+  }

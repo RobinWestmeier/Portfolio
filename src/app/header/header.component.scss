@@ -7,11 +7,59 @@
     background-color: #141D2F;
     color: white;
     font-weight: 400;
+    position: sticky;
+    position: fixed;
+    position: -webkit-sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+
     .header-links {
         display: flex;
         gap: 40px;
+        font-size: 32px;
+        :hover {
+            color: #00bee8;
+        }
     }
     .header-logo {
+        font-size: 48px;
+        display: flex;
+    }
+}
+
+.colored-dark {
+    color: #4b47ff;
+}
+.colored-light {
+    color: #00bee8;
+}
+
+@media (max-width: 900px) {
+    .header-links a {
         font-size: 24px;
     }
+}
+
+@media (max-width: 750px) {
+    .header {
+        padding: 40px 40px;
+    }
+
+    .header-logo span {
+        font-size: 36px;
+    }
+
+    .header-links a {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 750px) {
+    
 }

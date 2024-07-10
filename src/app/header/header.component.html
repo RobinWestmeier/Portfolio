@@ -1,8 +1,27 @@
 <div class="header">
-    <a href="#profile" class="header-logo">Robin</a>
+    <a (click)="scrollTo('profile')" class="header-logo">
+        <span>R</span>
+        <span>o</span>
+        <span>b</span>
+        <span class="colored-light">i</span>
+        <span>n</span>
+    </a>
     <div class="header-links">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+        <a (click)="scrollTo('aboutMe')">About me</a>
+        <a (click)="scrollTo('skills')">Skills</a>
+        <a (click)="scrollTo('portfolio')">Portfolio</a>
+        <div for="openMobileMenu" class="mobileIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </div>
+    </div>
+    <div id="mobileMenu">
+        <div class="main-content-wrapper">
+            <a (click)="scrollTo('aboutMe')">About me</a>
+            <a (click)="scrollTo('skills')">Skills</a>
+            <a (click)="scrollTo('portfolio')">Portfolio</a>
+            <a (click)="scrollTo('contact')">Contact</a>
+        </div>
     </div>
 </div>

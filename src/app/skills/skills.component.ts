@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from '../shared.service';
 
 @Component({
   selector: 'app-skills',
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './skills.component.scss'
 })
 export class SkillsComponent {
+  constructor(private sharedService: SharedService) {}
+
+  scrollTo(targetId: string): void {
+    this.sharedService.scrollTo(targetId);
+  }
 
 }
