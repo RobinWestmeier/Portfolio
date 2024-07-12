@@ -22,7 +22,7 @@ export class ContactComponent {
     acceptTerms: false,
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
     endPoint: 'https://robin-westmeier.de/sendMail.php',
@@ -53,17 +53,18 @@ export class ContactComponent {
 
       ngForm.resetForm();
     }
-    // if (ngForm.submitted && ngForm.form.valid) {
-    //   this.http
-    //     .post(this.post.endPoint, this.post.body(this.contactData))
-    //     .subscribe({
-    //       next: (response) => {
-    //         ngForm.resetForm();
-    //       },
-    //       error: (error) => {},
-    //       complete: () => {},
-    //     });
-    // }
+
+    if (ngForm.submitted && ngForm.form.valid) {
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
+        .subscribe({
+          next: (response) => {
+            ngForm.resetForm();
+          },
+          error: (error) => {},
+          complete: () => {},
+        });
+    }
   }
 
   showPopup() {
