@@ -74,7 +74,6 @@
   min-height: 100vh;
 
   .portfolio-wrapper {
-    // width: 1168px;
     width: 95%;
     display: flex;
     align-items: center;
@@ -172,7 +171,6 @@
     }
 
     .portfolio-wrapper {
-      // flex-direction: column;
       gap: 0;
       padding: 80px 20px;
 
@@ -251,10 +249,6 @@
       width: 90%;
     }
   }
-
-  // .portfolio-container {
-  //   padding: 80px 20px !important;
-  // }
 
   .blue-shadow {
     right: -375px;

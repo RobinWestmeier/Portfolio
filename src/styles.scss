@@ -7,12 +7,6 @@
   font-weight: 400;
 }
 
-// @font-face {
-//   font-family: "Poppins-bold", sans-serif;
-//   src: url("./assets/font/Poppins-Bold.ttf");
-//   font-style: bold;
-// }
-
 @mixin borderStyling($bRadius) {
   border-radius: $bRadius;
   border: 2px solid white;
@@ -41,8 +35,7 @@ body {
   background-color: #141D2F;
   color: white;
   font-family: "Poppins";
-  -ms-overflow-style: none; 
-  scrollbar-width: none;  
+  -ms-overflow-style: none;  
 }
 
 body::-webkit-scrollbar {
@@ -85,15 +78,6 @@ h4 {
   text-align: center;
 }
 
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-}
-
 .buttons-wrapper {
   display: flex;
   gap: 50px;
@@ -105,8 +89,6 @@ body {
     border-radius: 10px;
     font-size: 23px;
     font-weight: 400;
-    // width: 152px;
-    // height: 58px;
     cursor: pointer;
     color: white;
     border: none;

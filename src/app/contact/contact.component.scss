@@ -200,19 +200,7 @@
         color: white;
       }
 
-      // .contact-form input[type="submit"] {
-      //   padding: 15px 30px;
-      //   border: none;
-      //   border-radius: 10px;
-      //   background-color: #b6b6b6;
-      //   color: white;
-      //   display: block;
-      //   margin: 0 auto;
-      //   cursor: pointer;
-      // }
-
       .submit-button {
-        // width: 200px;
         padding: 0 10px;
         height: 55px;
         border-radius: 10px;
@@ -237,16 +225,6 @@
       .submit-button:disabled {
         background-color: #cccccc;
       }
-
-      // .contact-form input[type="submit"]:not([disabled]) {
-      //   background-color: #4b47ff;
-      //   cursor: pointer;
-      // }
-
-      // .contact-form input[type="submit"]:not([disabled]):hover {
-      //   background-color: #00bee8;
-      //   cursor: pointer;
-      // }
 
       .input-group.invalid input[type="text"],
       .input-group.invalid input[type="email"]{
@@ -428,7 +406,6 @@
 
     .right-side {
       padding-left: 30px;
-      // justify-content: flex-start;
       width: 90%;
 
       .contact-form {
