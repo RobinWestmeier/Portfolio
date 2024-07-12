@@ -428,13 +428,17 @@
 
     .right-side {
       padding-left: 30px;
-      justify-content: flex-start;
+      // justify-content: flex-start;
       width: 90%;
 
       .contact-form {
         width: 91%;
       }
     }
+  }
+
+  .go-up-button {
+    width: 105%;
   }
 }
 

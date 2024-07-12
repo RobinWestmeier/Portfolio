@@ -7,21 +7,23 @@
         <span>n</span>
     </a>
     <div class="header-links">
+        <a (click)="scrollTo('aboutMe'); toggleMenu()">About me</a>
+        <a (click)="scrollTo('skills')">Skills</a>
+        <a (click)="scrollTo('portfolio')">Portfolio</a>
+
+        <button class="burger-button d-none" (click)="toggleMenu()" [class.active]="menuOpen">
+            <div class="spinner diagonal1" [class.active]="menuOpen"></div>
+            <div class="spinner horizontal" [class.active]="menuOpen"></div>
+            <div class="spinner diagonal2" [class.active]="menuOpen"></div>
+        </button>
+    </div>
+
+</div>
+<div class="menu" [class.menu-open]="menuOpen">
+    <div class="menu-wrapper">
         <a (click)="scrollTo('aboutMe')">About me</a>
         <a (click)="scrollTo('skills')">Skills</a>
         <a (click)="scrollTo('portfolio')">Portfolio</a>
-        <div for="openMobileMenu" class="mobileIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-        </div>
-    </div>
-    <div id="mobileMenu">
-        <div class="main-content-wrapper">
-            <a (click)="scrollTo('aboutMe')">About me</a>
-            <a (click)="scrollTo('skills')">Skills</a>
-            <a (click)="scrollTo('portfolio')">Portfolio</a>
-            <a (click)="scrollTo('contact')">Contact</a>
-        </div>
+        <a (click)="scrollTo('contact')">Contact</a>
     </div>
 </div>

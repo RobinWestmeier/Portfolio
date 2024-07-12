@@ -41,7 +41,8 @@
   // background-position: center;
   // background-size: cover;
   position: relative;
-  bottom: -140px;
+  // bottom: -140px;
+  bottom: -80px;
 
   img {
     height: 705px;
@@ -213,7 +214,8 @@
   // right: 0;
   // overflow-x: hidden;
   position: absolute;
-  top: 650px;
+  top: 590px;
+  // top: 650px;
   right: 0;
   width: 100vw;
   height: auto;
@@ -240,6 +242,11 @@
 }
 
 @media (max-width: 1480px) {
+
+  .left-side {
+    bottom: -140px;
+  }
+
   .right-side {
     justify-content: center;
     position: relative;
@@ -280,7 +287,7 @@
   }
 
   .background {
-    top: 590px;
+    top: 580px;
   }
 }
 
@@ -296,7 +303,7 @@
   }
 
   .right-side {
-    bottom: 100px;
+    bottom: 90px;
   }
 
   .name {
@@ -380,7 +387,16 @@
   }
 
   .background {
-    top: 590px;
+    top: 59%;
+  }
+
+  .social-container {
+    top: 94%;
+    width: 85%;
+  }
+
+  .social-png p {
+    display: none;
   }
 }
 
@@ -401,10 +417,6 @@
   .rotated-span {
     font-size: 26px;
     left: 16px;
-  }
-
-  .social-png p {
-    display: none;
   }
 
   .left-side {
@@ -466,7 +478,7 @@
   }
 
   .name {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .occupation {
@@ -482,6 +494,11 @@
 
   .background {
     top: 52%;
+  }
+
+  .social-container {
+    top: 94%;
+    width: 70%;
   }
 }
 

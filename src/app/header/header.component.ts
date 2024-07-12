@@ -1,19 +1,27 @@
 import { Component } from '@angular/core';
 import { SharedService } from '../shared.service';
-import { FormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [FormsModule],
+  imports: [CommonModule],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+  styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-constructor(private sharedService: SharedService) {}
+  constructor(private sharedService: SharedService) {}
 
-scrollTo(targetId: string): void {
-  this.sharedService.scrollTo(targetId);
-}
+  menuOpen = false;
 
+  scrollTo(targetId: string): void {
+
+    this.sharedService.scrollTo(targetId);
+    this.menuOpen = false;
+  }
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
 }
