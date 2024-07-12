@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SharedService } from '../shared.service';
+import { SharedService } from '../../shared.service';
 import { CommonModule } from '@angular/common';
 
 @Component({

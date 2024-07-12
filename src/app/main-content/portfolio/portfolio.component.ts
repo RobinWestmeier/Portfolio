@@ -18,7 +18,7 @@ export class PortfolioComponent {
       technologies: 'JavaScript | HTML | CSS',
       description: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       liveTestUrl: '',
-      gitHubUrl: ''
+      gitHubUrl: 'https://github.com/RobinWestmeier'
     },
     {
       imageUrl: 'assets/img/el-pollo.png',
@@ -26,7 +26,7 @@ export class PortfolioComponent {
       technologies: 'JavaScript | HTML | CSS',
       description: 'A simple Jump-and-Run game based on an object-oriented approach.',
       liveTestUrl: '',
-      gitHubUrl: ''
+      gitHubUrl: 'https://github.com/RobinWestmeier'
     }
   ];
 

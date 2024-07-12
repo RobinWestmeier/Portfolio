@@ -1,10 +1,8 @@
 import { Routes } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { ProfileComponent } from './profile/profile.component';
-import { SkillsComponent } from './skills/skills.component';
-import { PortfolioComponent } from './portfolio/portfolio.component';
-import { AboutMeComponent } from './about-me/about-me.component';
-import { ContactComponent } from './contact/contact.component';
-import { FooterComponent } from './footer/footer.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+    { path: '', component: MainContentComponent },     
+    { path: 'privacy', component: PrivacyComponent }
+];
