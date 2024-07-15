@@ -118,13 +118,6 @@
     align-self: center;
   }
 
-  .talk-button:hover {
-    animation: hoverButton ease-in-out;
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-
   .green-shadow {
     position: absolute;
     top: 180px;
@@ -292,6 +285,15 @@
     top: 700px;
     left: 50%;
     transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 800px) {
+  .talk-button:hover {
+    animation: hoverButton ease-in-out;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 }
 

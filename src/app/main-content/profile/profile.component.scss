@@ -122,13 +122,6 @@
   }
 }
 
-.talk-button:hover {
-  animation: hoverButton ease-in-out;
-  animation-duration: 0.2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
 .social-container {
   position: absolute;
   display: flex;
@@ -226,7 +219,6 @@
 }
 
 @media (max-width: 1480px) {
-
   .left-side {
     bottom: -140px;
   }
@@ -331,8 +323,8 @@
     display: none;
   }
   .background {
-        top: 53%;
-      }
+    top: 53%;
+  }
 }
 
 @media (max-width: 801px) {
@@ -364,6 +356,15 @@
 
   .social-png p {
     display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .talk-button:hover {
+    animation: hoverButton ease-in-out;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
   }
 }
 
@@ -468,4 +469,3 @@
     width: 70%;
   }
 }
-
