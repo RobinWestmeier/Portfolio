@@ -51,7 +51,7 @@
 }
 
 .name {
-  font-size: 80px;
+  font-size: 68px;
   z-index: 2;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -59,17 +59,17 @@
 }
 
 .occupation {
-  font-size: 58px;
+  font-size: 48px;
   z-index: 2;
   color: $secondary-color;
   font-weight: 400;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   position: relative;
   bottom: 20px;
 }
 .rotated-span {
   transform: rotate(270deg);
-  font-size: 64px;
+  font-size: 52px;
   font-weight: 400;
   position: relative;
   bottom: 34px;
