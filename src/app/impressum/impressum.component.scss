@@ -7,47 +7,25 @@
   font-size: 23px;
 }
 
-.privacy-container {
+.impressum-container {
   width: 100%;
   background-color: #141d2f;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 30px 100px;
-  
-  .privacy {
+  padding: 130px 100px;
+  max-width: 1440px;
+
+  .impressum {
     max-width: 1440px;
     margin: 0 auto;
     padding: 30px;
-
-    h1 {
-      font-size: 64px;
-    }
-
-    h2 {
-      font-size: 40px;
-      margin-top: 20px;
-      color: $primary-color;
-    }
-
-    h3 {
-      font-size: 24px;
-      padding-top: 10px;
-    }
-
-    p {
-      margin-bottom: 20px;
-    }
-
-    a:hover {
-      color: $primary-color;
-    }
   }
 }
 
 @media (max-width: 900px) {
-  .privacy-container {
-    padding: 30px 30px;
+  .impressum-container {
+    padding: 30px;
   }
 
   ul {
@@ -57,7 +35,13 @@
 }
 
 @media (max-width: 500px) {
-  .privacy-container .privacy h2 {
+  .impressum-container .privacy h2 {
     font-size: 23px;
   }
+}
+
+@media (max-width: 900px) {
+    .impressum-container {
+      padding: 5px;
+    }
 }

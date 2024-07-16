@@ -84,7 +84,9 @@ h4 {
   margin-top: 35px;
 
   .live-test-button {
-    padding: 15px 30px;
+    // padding: 15px 30px;
+    width: 156px;
+    height: 58px;
     background-color: $secondary-color;
     border-radius: 10px;
     font-size: 23px;
@@ -97,11 +99,11 @@ h4 {
   
   .github-button {
     border-color: $primary-color;
+    width: 156px;
+    height: 58px;
     border-radius: 10px;
     font-size: 23px;
     font-weight: 400;
-    width: 137px;
-    height: 58px;
     cursor: pointer;
     background-color: $background-color;
     color: white;
