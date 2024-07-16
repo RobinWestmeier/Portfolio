@@ -1,29 +1,32 @@
 <div class="header">
-    <a href="#profile" class="header-logo">
-        <span>R</span>
-        <span>o</span>
-        <span>b</span>
-        <span class="colored-light">i</span>
-        <span>n</span>
-    </a>
-    <div class="header-links">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
+    <div class="header-wrapper">
+        <a href="#profile" class="header-logo">
+            <span>R</span>
+            <span>o</span>
+            <span>b</span>
+            <span class="colored-light">i</span>
+            <span>n</span>
+        </a>
+        <div class="header-links">
+            <a href="#aboutMe">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
 
-        <button class="burger-button d-none" (click)="toggleMenu()" [class.active]="menuOpen">
-            <div class="spinner diagonal1" [class.active]="menuOpen"></div>
-            <div class="spinner horizontal" [class.active]="menuOpen"></div>
-            <div class="spinner diagonal2" [class.active]="menuOpen"></div>
-        </button>
+            <button class="burger-button d-none" (click)="toggleMenu()" [class.active]="menuOpen">
+                <div class="spinner diagonal1" [class.active]="menuOpen"></div>
+                <div class="spinner horizontal" [class.active]="menuOpen"></div>
+                <div class="spinner diagonal2" [class.active]="menuOpen"></div>
+            </button>
+        </div>
+
     </div>
+    <div class="menu" [class.menu-open]="menuOpen">
+        <div class="menu-wrapper">
+            <a href="#aboutMe">About me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
 
-</div>
-<div class="menu" [class.menu-open]="menuOpen">
-    <div class="menu-wrapper">
-        <a href="#aboutMe">About me</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
     </div>
 </div>

@@ -1,18 +1,5 @@
 @import "../../../variables.scss";
 
-@keyframes hoverButton {
-  from {
-    transform: scale(1);
-    background-color: #00bee8;
-    transform-origin: top;
-  }
-  to {
-    transform: scale(1.25);
-    background-color: #4b47ff;
-    transform-origin: top;
-  }
-}
-
 @keyframes bounce {
   0%,
   100% {
@@ -103,21 +90,6 @@
     }
   }
 
-  .talk-button {
-    width: 165px;
-    height: 55px;
-    border-radius: 10px;
-    border: none;
-    background-color: #00bee8;
-    color: #fff;
-    font-size: 24px;
-    position: relative;
-    cursor: pointer;
-    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
-    z-index: 3;
-    align-self: center;
-  }
-
   .green-shadow {
     position: absolute;
     top: 180px;
@@ -135,13 +107,28 @@
   }
 }
 
+.lets-talk-button {
+  width: 165px;
+  height: 55px;
+  border-radius: 10px;
+  border: none;
+  background-color: $primary-color;
+  color: #fff;
+  font-size: 24px;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  align-self: center;
+}
+
 .my-skill-container
   .my-skill-section
   .right-side
   .my-skills-container
   .my-skills
-  .mySkillsDe 
-  h3{
+  .mySkillsDe
+  h3 {
   font-size: 65px;
 }
 
@@ -155,15 +142,11 @@
   font-size: 18px;
 }
 
-@media (max-width: 1450px) {
-  .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .my-skills
-    .mySkillsDe
+@media (max-width: 1440px) {
+  .my-skills {
     h3 {
-    font-size: 55px;
+      font-size: 65px;
+    }
   }
 }
 
@@ -187,16 +170,124 @@
     .mySkillsDe {
     font-size: 38px;
   }
+
+  .my-skills {
+    h3 {
+      font-size: 55px;
+    }
+  }
 }
 
 @media (max-width: 950px) {
+  .my-skill-container .my-skill-section .right-side .my-skills-container {
+    margin-right: 0;
+  }
+  .my-skill-container .my-skill-section {
+    display: flex;
+    flex-direction: column;
+    
+    .left-side,
+    .right-side {
+      width: 100%;
+    }
+    
+    .right-side {
+      order: 1;
+      display: block;
+      
+      .my-skills-container .my-skills p {
+        font-size: 65px;
+      }
+    }
+    
+    .left-side {
+      order: 2;
+      margin-top: -160px;
+      padding-bottom: 100px;
+      
+      .img-container {
+        justify-items: center;
+      }
+    }
+  }
+  
   .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .my-skills
-    .mySkillsDe {
-    font-size: 60px;
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .info-box-and-button-container
+  .lets-talk-button {
+    position: relative;
+    top: 570px;
+    left: 42%;
+  }
+  
+  .my-skill-container
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .info-box-and-button-container
+  .lets-talk-button:hover {
+    transform: translateX(-50%) scale(1.1);
+  }
+  
+  .my-skill-container
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .info-box-and-button-container {
+    display: block;
+  }
+}
+
+@media (max-width: 853px) {
+  .my-skill-container
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .info-box-and-button-container
+  .lets-talk-button {
+    position: relative;
+    top: 700px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .my-skill-container {
+    .lets-talk-button:hover {
+      animation: hoverButton ease-in-out;
+      animation-duration: 0.2s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .my-skill-container .my-skill-section .left-side .img-container {
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  }
+  
+  .my-skill-container
+  .my-skill-section
+  .right-side
+  .my-skills-container
+  .info-box-and-button-container
+  .lets-talk-button {
+    position: relative;
+    top: 610px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .my-skill-container .my-skill-section .left-side .img-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+  
+  .my-skill-container .green-shadow {
+    left: -750px;
   }
 }
 
@@ -208,120 +299,6 @@
     .my-skills
     .mySkillsDe {
     font-size: 45px;
-  }
-}
-
-@media (max-width: 950px) {
-  .my-skill-container .my-skill-section .right-side .my-skills-container {
-    margin-right: 0;
-  }
-  .my-skill-container .my-skill-section {
-    display: flex;
-    flex-direction: column;
-
-    .left-side,
-    .right-side {
-      width: 100%;
-    }
-
-    .right-side {
-      order: 1;
-      display: block;
-
-      .my-skills-container .my-skills p {
-        font-size: 65px;
-      }
-    }
-
-    .left-side {
-      order: 2;
-      margin-top: -160px;
-      padding-bottom: 100px;
-
-      .img-container {
-        justify-items: center;
-      }
-    }
-  }
-
-  .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .info-box-and-button-container
-    .lets-talk-button {
-    position: relative;
-    top: 570px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .info-box-and-button-container
-    .lets-talk-button:hover {
-    transform: translateX(-50%) scale(1.1);
-  }
-
-  .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .info-box-and-button-container {
-    display: block;
-  }
-}
-
-@media (max-width: 853px) {
-  .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .info-box-and-button-container
-    .lets-talk-button {
-    position: relative;
-    top: 700px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media (min-width: 800px) {
-  .talk-button:hover {
-    animation: hoverButton ease-in-out;
-    animation-duration: 0.2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-  }
-}
-
-@media (max-width: 590px) {
-  .my-skill-container .my-skill-section .left-side .img-container {
-    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  }
-
-  .my-skill-container
-    .my-skill-section
-    .right-side
-    .my-skills-container
-    .info-box-and-button-container
-    .lets-talk-button {
-    position: relative;
-    top: 610px;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-@media (max-width: 590px) {
-  .my-skill-container .my-skill-section .left-side .img-container {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
-  .my-skill-container .green-shadow {
-    left: -750px;
   }
 }
 
@@ -338,8 +315,10 @@
     transform: translateX(-50%);
   }
 
-  h3 {
-    font-size: 45px;
+  .my-skills {
+    h3 {
+      font-size: 45px;
+    }
   }
 
   .green-shadow {

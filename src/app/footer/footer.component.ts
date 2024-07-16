@@ -17,7 +17,7 @@ export class FooterComponent {
   }
 
   openGithub() {
-    window.open('https://github.com/', '_blank');
+    window.open('https://github.com/RobinWestmeier', '_blank');
   }
 
   openLinkedIn() {

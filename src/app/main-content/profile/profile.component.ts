@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { SharedService } from '../../shared.service';
 import { CommonModule } from '@angular/common';
+import { HeaderComponent } from '../../header/header.component';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent],
   templateUrl: './profile.component.html',
   styleUrl: './profile.component.scss'
 })
@@ -17,7 +18,7 @@ export class ProfileComponent {
   }
 
   openGithub() {
-    window.open('https://github.com/', '_blank');
+    window.open('https://github.com/RobinWestmeier', '_blank');
   }
 
   openLinkedIn() {
