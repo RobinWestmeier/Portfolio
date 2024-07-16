@@ -11,7 +11,7 @@
     </div>
     <div class="portfolio-text hidden">
         <p>
-            Explore a selection of my work here - Interact with the projects to see my skills in action.
+            {{'aboutMeTextSecond' | translate}}
         </p>
     </div>
 </div>
@@ -30,7 +30,7 @@
                 {{item.technologies}}
             </span>
             <p>
-                {{item.description}}
+                {{ 'portfolio.' + item.title | translate }}
             </p>
             <div class="buttons-wrapper">
                 <button (click)="openLink(item.liveTestUrl)" class="live-test-button">

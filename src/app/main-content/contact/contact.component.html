@@ -2,7 +2,7 @@
     <div class="left-line hidden"></div>
     <div class="contact-headline">
         <h1 class="hidden">
-            Contact
+            {{'contact' | translate}}
         </h1>
     </div>
     <div class="right-line">
@@ -13,16 +13,15 @@
     <div class="contact-wrapper">
         <div class="left-side">
             <h3>
-                Got a problem to solve?
+                {{'contactHeader' | translate}}
             </h3>
             <p>
-                Contact me trough this form, I am interested in hearing from you, knowing your ideas and contributing to
-                your projects with my work.
+                {{'contactText' | translate}}
             </p>
             <p>
-                Need a Frontend Developer?
+                {{'contactMe' | translate}}
                 <b>
-                    Contact me!
+                    {{'contactMeText' | translate}}
                 </b>
             </p>
         </div>
@@ -31,26 +30,26 @@
                 <form (ngSubmit)="onSubmit(contactForm)" autocomplete="off" #contactForm="ngForm">
 
                     <div class="input-group"  [class.invalid]="!name.valid && name.touched">
-                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="Your Name" required
+                        <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="name" name="name" placeholder="{{ 'yourName' | translate }}" required
                             autocomplete="new-password" />
                         @if (!name.valid && name.touched) {
-                            <span class="error-message">Your name is required</span>
+                            <span class="error-message"> {{ 'yourNameValid' | translate }}</span>
                         }
                     </div>
 
                     <div class="input-group" [class.invalid]="!email.valid && email.touched">
-                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="Your email" required
+                        <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email" placeholder="{{ 'yourMail' | translate }}" required
                             pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$" autocomplete="new-password" />
                         @if (!email.valid && email.touched) {
-                            <span class="error-message"> Your email is required</span>
+                            <span class="error-message"> {{ 'yourMailValid' | translate }}</span>
                         }
                     </div>
 
                     <div class="input-group" [class.invalid]="!message.valid && message.touched">
-                        <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" id="message" minlength="4" placeholder="Your message" style="height: 200px"
+                        <textarea #message="ngModel" [(ngModel)]="contactData.message" id="message" name="message" id="message" minlength="4" placeholder="{{ 'yourMessage' | translate }}" style="height: 200px"
                             required autocomplete="off"></textarea>
                         @if (!message.valid && message.touched) {
-                            <span class="error-message">Your message is empty</span>
+                            <span class="error-message">{{ 'yourMessageValid' | translate }}</span>
                         }
                     </div>
 
@@ -61,25 +60,25 @@
                         <label for="acceptTerms" [class.invalid]="!acceptTerms.valid && acceptTerms.touched">
                             <span>
                                 <span>
-                                    I've read the
+                                    {{ 'policy' | translate }}
                                 </span>
                                 <span class="privacy-policy">
                                     <a [routerLink]="['/privacy']">
-                                        privacy policy
+                                        {{ 'privacyPolicyLinkText' | translate }}
                                     </a>
                                 </span>
-                                and agree to the processing of my data as outlined.
+                                {{ 'andAgree' | translate }}
                             </span>
                         </label>
                         <span class="error-message"  *ngIf="!acceptTerms.valid && (acceptTerms.touched || contactForm.submitted)">
-                            Please accept the privacy policy
+                            {{ 'policyValid' | translate }}
                         </span>
                     </div>
 
                     <div id="popup" class="popup">
-                        <span>Email sent</span>
+                        <span> {{ 'popupMessage' | translate }}</span>
                     </div>
-                    <input type="submit" value="Send message :)" class="submit-button" [disabled]="!contactForm.valid" (click)="showPopup()" />
+                    <input type="submit" value="{{ 'sendMessage' | translate }}" class="submit-button" [disabled]="!contactForm.valid" (click)="showPopup()" />
                 </form>
 
                 <div class="go-up-button" (click)="goUp()">

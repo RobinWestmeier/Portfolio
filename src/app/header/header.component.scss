@@ -23,10 +23,12 @@
   align-items: center;
   max-width: 1440px;
   width: 100%;
+  z-index: 6;
 }
 
 .header-links {
   display: flex;
+  align-items: center;
   gap: 40px;
   font-size: 32px;
   :hover {
@@ -87,6 +89,7 @@
   padding: 10px;
   border-radius: 5px;
   font-size: 16px;
+  z-index: 6;
 }
 
 .lang-banner span {

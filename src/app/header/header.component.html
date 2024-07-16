@@ -11,20 +11,10 @@
             <a href="#aboutMe">{{'aboutMe'|translate}}</a>
             <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
-            <!-- <div class="form-select">
-                <select class="form-select" (change)="changeLang($event)" name="" id="" [value]="lang">
-                    <option value="en">
-                        English
-                    </option>
-                    <option value="de">
-                        German
-                    </option>
-                </select>
-            </div> -->
             <div class="lang-banner">
-                <span (click)="changeLang('en')" [class.active]="lang === 'en'">en</span> | 
+                <span (click)="changeLang('en')" [class.active]="lang === 'en'">en</span> |
                 <span (click)="changeLang('de')" [class.active]="lang === 'de'">de</span>
-              </div>
+            </div>
 
             <button class="burger-button d-none" (click)="toggleMenu()" [class.active]="menuOpen">
                 <div class="spinner diagonal1" [class.active]="menuOpen"></div>
@@ -40,6 +30,10 @@
             <a href="#skills">Skills</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contact">Contact</a>
+            <!-- <div class="lang-banner">
+                <span (click)="changeLang('en')" [class.active]="lang === 'en'">en</span> |
+                <span (click)="changeLang('de')" [class.active]="lang === 'de'">de</span>
+            </div> -->
         </div>
 
     </div>
