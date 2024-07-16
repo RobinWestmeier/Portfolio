@@ -43,8 +43,7 @@ export class HeaderComponent implements OnInit {
     }
   }
 
-  changeLang(lang: any) {
-    const selectedLanguage = lang.target.value;
+  changeLang(selectedLanguage: string) {
     this.storageService.setItem('lang', selectedLanguage);
     this.lang = selectedLanguage;
     this.translateService.use(selectedLanguage);

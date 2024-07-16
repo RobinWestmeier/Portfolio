@@ -80,6 +80,25 @@
   }
 }
 
+.lang-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.lang-banner span {
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.lang-banner span.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .burger-button {
   width: 35px;
   height: 30px;
