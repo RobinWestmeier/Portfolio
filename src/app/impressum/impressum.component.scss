@@ -13,21 +13,16 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 130px 100px;
+  padding: 150px 100px;
   max-width: 1440px;
 
   .impressum {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 30px;
   }
 }
 
 @media (max-width: 900px) {
-  .impressum-container {
-    padding: 30px;
-  }
-
   ul {
     display: flex;
     flex-direction: column;
@@ -40,8 +35,8 @@
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 750px) {
     .impressum-container {
-      padding: 5px;
+      padding: 150px 40px;
     }
 }

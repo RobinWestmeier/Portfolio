@@ -30,6 +30,7 @@
     flex-grow: 1;
     border-radius: 4px;
     min-width: 20px;
+    max-width: 100px;
   }
 
   .right-line {
@@ -39,7 +40,8 @@
   .contact-headline {
     display: flex;
     justify-content: flex-start;
-    width: 1440px;
+    max-width: 1440px;
+    width: 83%;
 
     h1 {
       font-size: 90px;
@@ -56,7 +58,7 @@
   background-color: #141d2f;
   position: relative;
   overflow: hidden;
-  padding-bottom: 100px;
+  padding: 100px;
 
   .purple-shadow-bottom {
     position: absolute;
@@ -153,14 +155,14 @@
       .contact-form input[type="text"]:valid,
       .contact-form input[type="email"]:valid {
         border-color: green;
-        background-image: url('/assets/img/symbols/valid.png') !important;
+        background-image: url("/assets/img/symbols/valid.png") !important;
         background-repeat: no-repeat;
         background-position: right 25px center;
       }
 
       .contact-form textarea:valid {
         border-color: green;
-        background-image: url('/assets/img/symbols/valid.png') !important;
+        background-image: url("/assets/img/symbols/valid.png") !important;
         background-repeat: no-repeat;
         background-position: right 25px top 15px;
       }
@@ -229,16 +231,16 @@
       }
 
       .input-group.invalid input[type="text"],
-      .input-group.invalid input[type="email"]{
+      .input-group.invalid input[type="email"] {
         border-color: red;
-        background-image: url('/assets/img/symbols/invalid.png');
+        background-image: url("/assets/img/symbols/invalid.png");
         background-repeat: no-repeat;
         background-position: right 25px center;
       }
 
       .input-group.invalid textarea {
         border-color: red;
-        background-image: url('/assets/img/symbols/invalid.png');
+        background-image: url("/assets/img/symbols/invalid.png");
         background-repeat: no-repeat;
         background-position: right 25px top 12px;
       }
@@ -384,11 +386,6 @@
   margin-top: 0 !important;
 }
 
-@media (max-width: 1485px) {
-  .contact-container .contact-wrapper .left-side {
-    padding-left: 45px;
-  }
-}
 
 @media (max-width: 950px) {
   .contact-headline-container .contact-headline {
@@ -402,22 +399,34 @@
     display: block;
 
     .left-side {
-      width: 80%;
-      padding-left: 35px;
+      width: 100%;
+      padding-left: 0px;
     }
 
     .right-side {
-      padding-left: 30px;
-      width: 90%;
+      // padding-left: 30px;
+      width: 100%;
 
       .contact-form {
-        width: 91%;
+        width: 100%;
       }
     }
   }
 
   .go-up-button {
     width: 105%;
+  }
+}
+
+@media (max-width: 750px) {
+  .contact-container {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-container .contact-wrapper .right-side .go-up-button {
+    top: 0px;
   }
 }
 
@@ -431,7 +440,7 @@
     padding: 0 5%;
     justify-content: center;
     width: 100%;
-    
+
     .contact-form {
       font-size: 1em;
       padding: 0;

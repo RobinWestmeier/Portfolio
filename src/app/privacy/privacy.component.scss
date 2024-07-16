@@ -9,6 +9,7 @@
 
 .privacy-container {
   width: 100%;
+  max-width: 1440px;
   background-color: #141d2f;
   justify-content: center;
   display: flex;
@@ -17,8 +18,11 @@
   
   .privacy {
     max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
 
     h1 {
       font-size: 64px;
@@ -38,10 +42,6 @@
     p {
       margin-bottom: 20px;
     }
-
-    a:hover {
-      color: $primary-color;
-    }
   }
 }
 
@@ -56,8 +56,40 @@
   }
 }
 
+@media (max-width: 800px) {
+  .privacy-container {
+    padding: 30px 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .privacy-container .privacy h2 {
+    font-size: 30px;
+  }
+
+  li {
+    font-size: 17px;
+  }
+
+  p {
+    font-size: 17px;
+  }
+}
+
 @media (max-width: 500px) {
+  .privacy-container .privacy {
+    padding: 20px;
+  }
+
   .privacy-container .privacy h2 {
     font-size: 23px;
+  }
+
+  .privacy-container .privacy h1 {
+    font-size: 30px;
+  }
+
+  .privacy-container .privacy h3 {
+    font-size: 20px;
   }
 }
