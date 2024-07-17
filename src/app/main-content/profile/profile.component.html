@@ -6,7 +6,7 @@
     </div>
 
     <div class="right-side">
-        <p class="rotated-span"> {{'Iam' | translate}}</p>
+        <p  class="rotated-span" [ngClass]="{'rotated-spanDE': isGER()}"> {{'Iam' | translate}}</p>
         <div class="name-and-occupation">
             <div>
                 <Span class="name">Robin Westmeier</Span> <br>
