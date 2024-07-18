@@ -4,6 +4,7 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TranslateService } from '@ngx-translate/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { StorageService } from '../../storage.service';
+import { AnimationService } from '../../animation.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -41,6 +42,7 @@ export class PortfolioComponent implements OnInit {
   constructor(
     private translateService: TranslateService,
     private cdRef: ChangeDetectorRef,
+    private animationService: AnimationService,
     @Inject(PLATFORM_ID) private platformId: object
   ) {}
 
@@ -49,6 +51,7 @@ export class PortfolioComponent implements OnInit {
       const lang = localStorage.getItem('lang') || 'en';
       this.translateService.use(lang);
     }
+    this.animationService.applyAnimation();
   }
 
   changeLang(lang: string): void {
