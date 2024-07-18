@@ -228,6 +228,7 @@
 
       .submit-button:disabled {
         background-color: #cccccc;
+        cursor: default;
       }
 
       .input-group.invalid input[type="text"],
@@ -305,13 +306,14 @@
         margin: 0;
         font: inherit;
         color: #00bee8;
-        width: 20px;
+        min-width: 20px;
         height: 20px;
         border: 0.15em solid #00bee8;
         border-radius: 0.15em;
         transform: translateY(-0.075em);
         display: grid;
         place-content: center;
+        cursor: pointer;
       }
 
       input[type="checkbox"]::before {
@@ -386,6 +388,14 @@
   margin-top: 0 !important;
 }
 
+@media (max-width: 1175px) {
+  .contact-container[_ngcontent-ng-c2707246296]
+    .contact-wrapper[_ngcontent-ng-c2707246296]
+    .right-side[_ngcontent-ng-c2707246296]
+    .form-group[_ngcontent-ng-c2707246296] {
+    padding-bottom: 20px;
+  }
+}
 
 @media (max-width: 950px) {
   .contact-headline-container .contact-headline {
@@ -445,6 +455,15 @@
       font-size: 1em;
       padding: 0;
     }
+  }
+}
+
+@media (max-width: 475px) {
+  .contact-container
+    .contact-wrapper
+    .right-side
+    .error-message {
+    bottom: -41px;
   }
 }
 

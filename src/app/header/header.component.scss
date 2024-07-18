@@ -154,23 +154,31 @@
   width: 0;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   .header-links a {
-    font-size: 24px;
+    font-size: 28px;
   }
 }
 
-@media (max-width: 750px) {
-  .header {
-    padding: 40px 40px;
+@media (max-width: 900px) {
+  .header-links a {
+    font-size: 22px;
   }
+}
 
+@media (max-width: 850px) {
   .header-links a {
     display: none;
   }
 
   .burger-button {
     display: flex !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .header {
+    padding: 40px 40px;
   }
 }
 

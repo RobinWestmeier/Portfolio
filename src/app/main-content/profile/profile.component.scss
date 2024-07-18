@@ -59,7 +59,7 @@
 }
 
 .occupation {
-  font-size: 48px;
+  font-size: 46px;
   z-index: 2;
   color: $secondary-color;
   font-weight: 400;
@@ -76,6 +76,10 @@
   left: 20px;
   white-space: nowrap;
   z-index: 2;
+}
+
+.rotated-spanDE {
+  font-size: 34px!important;
 }
 
 .right-side {
