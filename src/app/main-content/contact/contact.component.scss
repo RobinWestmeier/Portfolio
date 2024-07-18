@@ -155,14 +155,14 @@
       .contact-form input[type="text"]:valid,
       .contact-form input[type="email"]:valid {
         border-color: green;
-        background-image: url("/assets/img/symbols/valid.png") !important;
+        background-image: url("../../../assets/img/symbols/valid.png") !important;
         background-repeat: no-repeat;
         background-position: right 25px center;
       }
 
       .contact-form textarea:valid {
         border-color: green;
-        background-image: url("/assets/img/symbols/valid.png") !important;
+        background-image: url("../../../assets/img/symbols/valid.png") !important;
         background-repeat: no-repeat;
         background-position: right 25px top 15px;
       }
@@ -234,14 +234,14 @@
       .input-group.invalid input[type="text"],
       .input-group.invalid input[type="email"] {
         border-color: red;
-        background-image: url("/assets/img/symbols/invalid.png");
+        background-image: url("../../../assets/img/symbols/invalid.png");
         background-repeat: no-repeat;
         background-position: right 25px center;
       }
 
       .input-group.invalid textarea {
         border-color: red;
-        background-image: url("/assets/img/symbols/invalid.png");
+        background-image: url("../../../assets/img/symbols/invalid.png");
         background-repeat: no-repeat;
         background-position: right 25px top 12px;
       }
