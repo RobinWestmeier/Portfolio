@@ -63,7 +63,7 @@
                                     {{ 'policy' | translate }}
                                 </span>
                                 <span class="privacy-policy">
-                                    <a [routerLink]="['/privacy']">
+                                    <a [routerLink]="['/privacy']" (click)="goUp()">
                                         {{ 'privacyPolicyLinkText' | translate }}
                                     </a>
                                 </span>
