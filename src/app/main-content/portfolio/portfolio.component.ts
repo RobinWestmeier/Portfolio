@@ -22,7 +22,7 @@ export class PortfolioComponent implements OnInit {
       description: ' {{join | translate}}',
       liveTestUrl:
         'https://gruppe-786.developerakademie.net/components/login/login.html',
-      gitHubUrl: 'https://github.com/RobinWestmeier',
+      gitHubUrl: 'https://github.com/RobinWestmeier/Join',
     },
     {
       imageUrl: 'assets/img/el-pollo.png',
@@ -31,7 +31,7 @@ export class PortfolioComponent implements OnInit {
       description: "{{'elPollo' | translate}}",
       liveTestUrl:
         'https://robin-westmeier.developerakademie.net/el-pollo-loco/index.html',
-      gitHubUrl: 'https://github.com/RobinWestmeier',
+      gitHubUrl: 'https://github.com/RobinWestmeier/El-Pollo-Loco/tree/main/El%20Pollo%20Loco',
     },
   ];
 
