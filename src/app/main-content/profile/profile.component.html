@@ -1,18 +1,19 @@
 <section class="first-section">
+    <div class="first-section-wrapper">
+        <div class="left-side">
+            <img class="box-shadow" src="./assets/img/background/Group shadow.png" alt="">
+            <img class="profile-img" src="./assets/img/Robin-wide-noBg.png" alt="">
+        </div>
 
-    <div class="left-side">
-        <img class="box-shadow" src="./assets/img/background/Group shadow.png" alt="">
-        <img class="profile-img" src="./assets/img/Robin-wide-noBg.png" alt="">
-    </div>
-
-    <div class="right-side">
-        <p  class="rotated-span" [ngClass]="{'rotated-spanDE': isGER()}"> {{'Iam' | translate}}</p>
-        <div class="name-and-occupation">
-            <div>
-                <Span class="name">Robin Westmeier</Span> <br>
-                <Span class="occupation">{{'occupation' | translate}}</Span>
+        <div class="right-side">
+            <p class="rotated-span" [ngClass]="{'rotated-spanDE': isGER()}"> {{'Iam' | translate}}</p>
+            <div class="name-and-occupation">
+                <div>
+                    <Span class="name">Robin Westmeier</Span> <br>
+                    <Span class="occupation">{{'occupation' | translate}}</Span>
+                </div>
+                <button (click)="scrollTo('contact')" class="talk-button"> {{'talk-button' | translate}}</button>
             </div>
-            <button (click)="scrollTo('contact')" class="talk-button"> {{'talk-button' | translate}}</button>
         </div>
     </div>
 </section>
@@ -30,6 +31,7 @@
         </div>
     </div>
     <div class="right-line"></div>
+
 </section>
 
 <div class="scroll-down">
