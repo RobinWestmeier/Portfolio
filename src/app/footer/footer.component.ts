@@ -27,4 +27,8 @@ export class FooterComponent {
       '_blank'
     );
   }
+
+  goUp() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }

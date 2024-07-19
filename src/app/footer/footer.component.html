@@ -4,7 +4,7 @@
 			<div class="name">
 				<h3 class="fontPoppins">Rob<span class="styled-letter">i</span>n</h3>
                 <div class="impressum">
-                        <a [routerLink]="['/impressum']">{{'imprint'|translate}}</a>
+                        <a [routerLink]="['/impressum']" (click)="goUp()">{{'imprint'|translate}}</a>
                 </div>
 			</div>
 			<div class="my-name">
