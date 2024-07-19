@@ -92,10 +92,6 @@
 }
 
 @media (max-width: 500px) {
-  .privacy-container .privacy {
-    padding: 20px;
-  }
-
   .privacy-container .privacy h2 {
     font-size: 23px;
   }
@@ -106,5 +102,19 @@
 
   .privacy-container .privacy h3 {
     font-size: 20px;
+  }
+
+  .privacy-container .privacy p {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 400px) {
+  .privacy-container {
+    padding: 140px 25px;
   }
 }
