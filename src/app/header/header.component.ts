@@ -69,7 +69,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleMenu() {
-    if (this.deviceWidth < 751) {
+    if (this.deviceWidth < 851) {
       this.menuOpen = !this.menuOpen;
     }
   }
