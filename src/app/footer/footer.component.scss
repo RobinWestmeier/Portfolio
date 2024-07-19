@@ -103,6 +103,8 @@
         .my-name {
           font-size: 17px;
           padding: 20px;
+          display: flex;
+          justify-content: center;
         }
 
         .github-linkedin-email {
@@ -117,7 +119,7 @@
         .name h3 {
           text-align: center;
           top: 30px;
-          padding-bottom: 40px;
+          margin: 40px;
           position: relative;
         }
       }
