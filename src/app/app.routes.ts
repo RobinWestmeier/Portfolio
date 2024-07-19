@@ -7,4 +7,5 @@ export const routes: Routes = [
     { path: '', component: MainContentComponent },     
     { path: 'privacy', component: PrivacyComponent },
     { path: 'impressum', component: ImpressumComponent },
+    { path: '**', redirectTo: '', pathMatch: 'full' }
 ];
