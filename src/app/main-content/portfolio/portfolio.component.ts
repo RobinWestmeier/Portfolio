@@ -50,8 +50,8 @@ export class PortfolioComponent implements OnInit {
     if (isPlatformBrowser(this.platformId)) {
       const lang = localStorage.getItem('lang') || 'en';
       this.translateService.use(lang);
+      this.animationService.applyAnimation();
     }
-    this.animationService.applyAnimation();
   }
 
   changeLang(lang: string): void {

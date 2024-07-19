@@ -63,6 +63,7 @@ export class HeaderComponent implements OnInit {
   }
 
   scrollTo(targetId: string): void {
+
     this.sharedService.scrollTo(targetId);
     this.menuOpen = false;
   }
