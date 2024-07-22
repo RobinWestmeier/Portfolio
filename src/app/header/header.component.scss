@@ -64,7 +64,7 @@
   opacity: 0;
   transform: scaleY(0);
   transform-origin: top right;
-  transition: opacity 0.8s ease, transform 0.8s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .menu-open {
@@ -126,18 +126,18 @@
 .diagonal1 {
   position: absolute;
   top: 0px;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.55s ease-in-out;
 }
 
 .diagonal2 {
   bottom: 0;
   position: absolute;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.55s ease-in-out;
 }
 
 .horizontal {
   position: absolute;
-  transition: all 0.75s ease-in-out;
+  transition: all 0.55s ease-in-out;
 }
 
 .burger-button.active .diagonal1 {
@@ -171,10 +171,6 @@
     display: none;
   }
 
-  .header-links .lang-banner {
-    display: none;
-  }
-
   .burger-button {
     display: flex !important;
   }
@@ -189,5 +185,21 @@
 @media (max-width: 500px) {
   .header-logo span {
     font-size: 36px;
+  }
+
+  .lang-banner {
+    font-size: 14px;
+  }
+
+  .header-wrapper a {
+    font-size: 32px;
+  }
+
+  .header {
+    padding: 20px 40px;
+  }
+
+  .header-links {
+    gap: 6px;
   }
 }
