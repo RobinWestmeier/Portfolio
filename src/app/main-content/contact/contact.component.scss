@@ -457,19 +457,21 @@
   }
 }
 
-@media (max-width: 475px) {
-  .contact-container
-    .contact-wrapper
-    .right-side
-    .error-message {
-    bottom: -41px;
-  }
-}
 
 @media (max-width: 400px) {
   .contact-headline-container .contact-headline {
     h1 {
       font-size: 45px;
     }
+  }
+}
+
+
+@media (max-width: 370px) {
+  .contact-container
+    .contact-wrapper
+    .right-side
+    .error-message {
+      font-size: 13px;
   }
 }

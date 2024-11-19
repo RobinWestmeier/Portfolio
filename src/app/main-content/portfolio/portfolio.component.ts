@@ -17,12 +17,21 @@ export class PortfolioComponent implements OnInit {
   portfolioItems: PortfolioItem[] = [
     {
       imageUrl: 'assets/img/join.png',
-      title: 'Join',
-      technologies: 'JavaScript | HTML | CSS',
+      title: 'DABubble',
+      technologies: 'Angular | Firebase | Material Design',
       description: ' {{join | translate}}',
       liveTestUrl:
-        'https://gruppe-786.developerakademie.net/components/login/login.html',
-      gitHubUrl: 'https://github.com/RobinWestmeier/Join',
+        'https://dabubble.robin-westmeier.de/login',
+      gitHubUrl: 'https://github.com/RobinWestmeier/dabubble',
+    },
+    {
+      imageUrl: 'assets/img/join.png',
+      title: 'Portfolio',
+      technologies: 'Angular | Typescript | SCSS',
+      description: ' {{join | translate}}',
+      liveTestUrl:
+        'https://robin-westmeier.de/portfolio/',
+      gitHubUrl: 'https://github.com/RobinWestmeier/portfolio',
     },
     {
       imageUrl: 'assets/img/el-pollo.png',

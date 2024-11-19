@@ -12,50 +12,109 @@
 
 .first-section {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  background-color: #141d2f;
+  position: relative;
+  overflow: hidden;
   height: 100vh;
-  width: 100%;
+  padding-top: 50px;
 }
 
 .first-section-wrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  height: 100vh;
-  width: 100%;
   max-width: 1440px;
+  display: flex;
+  flex-direction: row;
 }
 
 .left-side {
+  width: 40%;
+  position: relative;
+}
+
+.box-shadow {
+  height: 500px;
+}
+
+.profile-img {
+  height: 500px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  z-index: 3;
+  flex: 1;
+}
+
+.name-and-occupation {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 50%;
-  height: 80%;
   position: relative;
-  bottom: -80px;
+}
 
-  img {
-    height: 705px;
-    object-fit: cover;
+.social-container {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  bottom: -10px;
+  z-index: 3;
+}
+
+.left-line {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4px;
+  background-color: $secondary-color;
+  flex-grow: 1;
+  border-radius: 4px;
+  min-width: 50px;
+  width: 150px;
+}
+
+.right-line {
+  flex-grow: 1;
+}
+
+.github-linkedin-email {
+  display: flex;
+  justify-content: space-between;
+  width: 1440px;
+  align-items: center;
+  padding-right: 20px;
+
+  p {
+    font-size: 23px;
   }
 
-  .box-shadow {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 646px;
-    height: 705px;
-    z-index: 1;
-    object-fit: fill;
-    background-color: transparent;
-  }
+  .social-png {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-right: 60px;
+    padding: 0 20px;
 
-  img:not(.box-shadow) {
-    position: relative;
-    z-index: 1;
+    a {
+      img {
+        height: 30px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.5s ease;
+      }
+
+      img:hover {
+        transform: rotate(360deg);
+      }
+    }
   }
 }
 
@@ -76,6 +135,7 @@
   position: relative;
   bottom: 20px;
 }
+
 .rotated-span {
   transform: rotate(270deg);
   font-size: 52px;
@@ -88,25 +148,9 @@
 }
 
 .rotated-spanDE {
-  font-size: 34px!important;
+  font-size: 34px !important;
 }
 
-.right-side {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  width: 80%;
-  position: relative;
-  bottom: 20px;
-  right: 150px;
-
-  .name-and-occupation {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-  }
-}
 .talk-button {
   min-width: 165px;
   height: 55px;
@@ -122,64 +166,6 @@
   align-self: center;
 }
 
-.social-container {
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  top: 90%;
-  z-index: 2;
-
-  .left-line {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4px;
-    background-color: $secondary-color;
-    flex-grow: 1;
-    border-radius: 4px;
-    min-width: 100px;
-  }
-
-  .right-line {
-    flex-grow: 1;
-  }
-
-  .github-linkedin-email {
-    display: flex;
-    justify-content: space-between;
-    width: 1440px;
-    align-items: center;
-    padding-right: 20px;
-
-    p {
-      font-size: 23px;
-    }
-
-    .social-png {
-      display: flex;
-      align-items: center;
-      gap: 40px;
-      margin-right: 60px;
-      padding: 0 20px;
-
-      a {
-        img {
-          height: 30px;
-          object-fit: cover;
-          cursor: pointer;
-          transition: transform 0.5s ease;
-        }
-
-        img:hover {
-          transform: rotate(360deg);
-        }
-      }
-    }
-  }
-}
-
 .scroll-down {
   display: flex;
   position: absolute;
@@ -193,54 +179,35 @@
 }
 
 .background {
+  width: 100%;
   position: absolute;
-  top: 590px;
-  right: 0;
-  width: 100vw;
-  height: auto;
-  z-index: 1;
-  overflow-x: hidden;
+  bottom: 0;
+  z-index: 2;
+  height: 30%;
+}
 
-  img {
-    width: 100%;
+
+
+
+@media (max-width: 2000px) {
+  .scroll-down {
+    right: 240px;
   }
 }
 
-@media (max-width: 1720px) {
-  .name {
-    font-size: 70px;
-  }
-
-  .occupation {
-    font-size: 48px;
-  }
-
-  .rotated-span {
-    font-size: 54px;
-  }
-
-  .rotated-spanDE {
-    font-size: 34px!important;
+@media (max-width: 1800px) {
+  .scroll-down {
+    right: 100px;
   }
 }
 
 @media (max-width: 1480px) {
-  .left-side {
-    bottom: -140px;
-  }
-
-  .right-side {
-    justify-content: center;
-    position: relative;
-    left: -38px;
-  }
-
   .rotated-span {
     font-size: 34px;
   }
 
   .rotated-spanDE {
-    font-size: 24px!important;
+    font-size: 24px !important;
   }
 
   .name {
@@ -251,147 +218,43 @@
     letter-spacing: 4px;
     font-size: 32px;
   }
-
-  .left-side {
-    width: 100%;
-
-    .profile-img {
-      height: 530px;
-    }
-
-    .box-shadow {
-      left: auto;
-      height: 530px;
-    }
-  }
-
-  .background {
-    top: 580px;
-  }
 }
 
-@media (max-width: 1300px) {
-  .background {
-    top: 600px;
-  }
-}
-
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .first-section-wrapper {
     flex-direction: column;
   }
 
-  .right-side {
-    bottom: 90px;
+  .talk-button {
+    left: -32px;
   }
 
-  .name {
-    position: relative;
-    font-size: 72px;
+  .box-shadow {
+    height: 400px;
   }
 
-  .occupation {
-    letter-spacing: 4px;
-    font-size: 48px;
-  }
-
-  .rotated-span {
-    font-size: 52px;
-  }
-
-  .rotated-spanDE {
-    font-size: 34px!important;
+  .profile-img {
+    height: 400px;
   }
 
   .background {
-    top: 51%;
+    height: 45%;
   }
 }
 
-@media (max-width: 1025px) {
-  .left-side {
-    .box-shadow {
-      height: 500px;
-      top: 60px;
-    }
-
-    .profile-img {
-      top: 6%;
-      height: 65%;
-    }
-  }
-
-  .right-side {
-    left: -62px;
-    bottom: 13%;
-    width: 100%;
-  }
-
-  .social-container {
-    top: 92%;
-  }
-}
-
-@media (max-width: 961px) {
+@media (max-width: 750px) {
   .scroll-down {
     display: none;
   }
-  .background {
-    top: 53%;
-  }
 }
 
-@media (max-width: 801px) {
-  .right-side {
-    left: -50px;
-    bottom: 11%;
-  }
-
-  .name {
-    font-size: 58px;
-  }
-
-  .occupation {
-    font-size: 40px;
-  }
-
-  .rotated-span {
-    font-size: 42px;
-  }
-
-  .rotated-spanDE {
-    font-size: 28px!important;
-  }
-
-  .background {
-    top: 59%;
-  }
-
+@media (max-width: 600px) {
   .social-container {
-    top: 94%;
-    width: 85%;
+    bottom: 5px;
   }
 
-  .social-png p {
+  .email {
     display: none;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .right-side {
-    .talk-button:hover {
-      animation: hoverButton ease-in-out;
-      animation-duration: 0.2s;
-      animation-iteration-count: 1;
-      animation-fill-mode: forwards;
-    }
-  }
-}
-
-@media (max-width: 641px) {
-  .right-side {
-    left: -34px;
-    bottom: 13%;
   }
 
   .name {
@@ -408,37 +271,18 @@
   }
 
   .rotated-spanDE {
-    font-size: 18px!important;
+    font-size: 18px !important;
   }
 
-  .left-side {
-    .box-shadow {
-      width: 100%;
-      top: -4%;
-    }
-
-    .profile-img {
-      top: 0%;
-      height: 60%;
-    }
-  }
-
-  .background {
-    top: 54%;
+  .talk-button {
+    left: -14px;
   }
 }
 
-@media (max-width: 481px) {
-  .left-side {
-    overflow: hidden;
-
-    .profile-img {
-      left: 6%;
-    }
-  }
-
+@media (max-width: 480px) {
   .right-side {
-    left: -26px;
+    position: relative;
+    right: -16px;
   }
 
   .name {
@@ -458,15 +302,12 @@
 }
 
 @media (max-width: 380px) {
-  .left-side {
-    .profile-img {
-      left: 4%;
-      height: 52%;
-    }
+  .right-side {
+    right: -50px;
   }
 
-  .right-side {
-    left: -10px;
+  .talk-button {
+    left: -4px;
   }
 
   .name {
@@ -482,14 +323,5 @@
     font-size: 21px;
     left: 10px;
     bottom: 35px;
-  }
-
-  .background {
-    top: 52%;
-  }
-
-  .social-container {
-    top: 94%;
-    width: 70%;
   }
 }

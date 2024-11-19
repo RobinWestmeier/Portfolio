@@ -21,12 +21,12 @@
 @keyframes hoverButton {
   from {
     transform: scale(1);
-    background-color: #00bee8;
+    background-color: $primary-color;
     transform-origin: top;
   }
   to {
     transform: scale(1.25);
-    background-color: #4b47ff;
+    background-color: $secondary-color;
     transform-origin: top;
   }
 }
