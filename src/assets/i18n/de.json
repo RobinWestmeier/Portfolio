@@ -27,6 +27,8 @@
   "yourMessageValid": "Bitte geben Sie eine Nachricht ein",
   "sendMessage": "Nachricht senden",
   "popupMessage": "Email gesendet",
+  "portfolio.DABubble": "Chat Messenger inspiriert von Slack und Discord. Chatte mit Kollegen oder erstelle einen Gruppenchat.",
+  "portfolio.Portfolio": "Ein mit Angular erstelltes Portfolio um mich und meine Projekte zu zeigen.",
   "portfolio.Join": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben mithilfe von Drag-and-Drop-Funktionen, weise Benutzer und Kategorien zu.",
   "portfolio.El Pollo Loco": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert.",
   "entriesRefferedTo": "Angaben gemäß § 5 DDG",

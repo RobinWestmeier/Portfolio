@@ -19,7 +19,7 @@ export class PortfolioComponent implements OnInit {
       imageUrl: 'assets/img/join.png',
       title: 'DABubble',
       technologies: 'Angular | Firebase | Material Design',
-      description: ' {{join | translate}}',
+      description: ' {{dabubble | translate}}',
       liveTestUrl:
         'https://dabubble.robin-westmeier.de/login',
       gitHubUrl: 'https://github.com/RobinWestmeier/dabubble',
@@ -28,7 +28,7 @@ export class PortfolioComponent implements OnInit {
       imageUrl: 'assets/img/join.png',
       title: 'Portfolio',
       technologies: 'Angular | Typescript | SCSS',
-      description: ' {{join | translate}}',
+      description: ' {{portfolio | translate}}',
       liveTestUrl:
         'https://robin-westmeier.de/portfolio/',
       gitHubUrl: 'https://github.com/RobinWestmeier/portfolio',
