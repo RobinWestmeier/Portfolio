@@ -22,7 +22,7 @@ export class PortfolioComponent implements OnInit {
       description: ' {{dabubble | translate}}',
       liveTestUrl:
         'https://dabubble.robin-westmeier.de/login',
-      gitHubUrl: 'https://github.com/RobinWestmeier/dabubble',
+      gitHubUrl: 'https://github.com/Herteux94/DABubble',
     },
     {
       imageUrl: 'assets/img/join.png',
